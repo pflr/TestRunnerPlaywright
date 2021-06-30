@@ -1,0 +1,111 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Pablo Rodrigues/source/repos/test-runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "C:/Users/Pablo Rodrigues/source/repos/test-runner",
+        "testIgnore": [],
+        "testMatch": [
+          "first.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot"
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "rootDir": "C:/Users/Pablo Rodrigues/source/repos/test-runner",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "workers": 4
+  },
+  "suites": [
+    {
+      "title": "",
+      "file": "test/first.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Suite demo",
+          "file": "test/first.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "open letcode and verify title",
+              "ok": true,
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0
+                    }
+                  ]
+                }
+              ],
+              "file": "test/first.test.ts",
+              "line": 10,
+              "column": 5
+            },
+            {
+              "title": "open letcode and login",
+              "ok": true,
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1336,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0
+                    }
+                  ]
+                }
+              ],
+              "file": "test/first.test.ts",
+              "line": 16,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
